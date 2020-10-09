@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Istok+Web&display=swap');
+
 :root {
     --bg-color: #FFFFFF;
     --color-2: #A2BF63;
@@ -5,7 +7,7 @@
     --color-4: #5FA0D9;
     --color-5: #85A050;
 
-    --primary-font: 'Fjalla One', sans-serif;
+    --primary-font: 'Istok Web', sans-serif;
     --secondary-font: 'Assistant', sans-serif;
     --main-text-color: #000;
 
@@ -15,23 +17,47 @@
 main {
     margin: 20px;
 }
+
 img {
     width: 104%;
     margin: -30px;
     height: 60%;
+    z-index: 10;
 
 }
-nav {
+
+body nav ul {
+    background-color: var(--color-2);
+    margin: -20px;
     display: flex;
     flex-direction: row;
+    justify-content: flex-end;
+    padding: 50px;
+    align-items: stretch;
+    align-content: space-between;
+    color: var(--bg-color);
+    font-family: var(--primary-font);
+    text-decoration-style:none;
 }
 
-p{
+li {
+
+    margin: 5px 25px;
+
+}
+
+p {
     width: 50%;
 
 }
 
 button {
     border-radius: 20px;
-    background-color: var (--color-3);
+    background-color: var(--color-3);
+    padding: 15px;
+    font-size: 20px;
+    border: var(--color-2) solid 4px;
+    font-family: var(--primary-font);
+    z-index: 20;
+    cursor : pointer;
 }
