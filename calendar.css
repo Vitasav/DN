@@ -45,14 +45,13 @@ a{
 
 /* required */
 .calendar{
-	position: absolute;
+	position: inherit;
 	border-radius: 20px;
 	overflow: hidden;
-	width: 1250px;
-	height: 460px;
+	width: 1350px;
+	height: 560px;
 	left: 50%;
-	margin-left: -600px;
-	margin-top: -225px;
+	margin:50px;
 	top: 90%;
 	background-color:  #ffffff;
 	color: #333333;
@@ -91,7 +90,7 @@ a{
 }
 
 .calendar .leftCol{
-	width: 40%;
+	width: 30%;
 	background-color: #C0D2CC
 }
 
@@ -141,7 +140,7 @@ a{
 }
 
 .calendar .rightCol{
-	width: 60%;
+	width: 70%;
 }
 
 .calendar .rightCol h2{
@@ -168,8 +167,9 @@ a{
 	font-size: 13px;
 	color: #C7BEBE;
 	text-align: center;
-	width: 55px;
+	width: 22px;
 	margin-bottom: 20px;
+    cursor: pointer;
 }
 
 .calendar .months li .selected{
@@ -178,14 +178,15 @@ a{
 }
 
 .calendar .weekday li a{
-	width: 95px;
+	width: 75px;
 	text-align: center;
 	margin-bottom: 20px;
 	font-size: 15px;
+    cursor: pointer;
 }
 
 .calendar .days li{
-	width: 95px;
+	width: 75px;
 }
 
 .calendar .days li a{
@@ -212,5 +213,96 @@ a{
     width: 45px;
 }
 
+body {
+    overflow-x: hidden;
+}
 
+main {
+    margin: 20px;
+}
+
+img {
+    width: 104%;
+    margin: 20px -30px 0 -40px;
+    height: 60%;
+    z-index: 10;
+
+}
+
+
+
+nav {
+    position: relative;
+    top: 20px;
+    left: 60%;
+    transform: translateX(-50%);
+    display: inline-block;
+    border: 2px solid #EBECF1;
+    border-radius: 30px;
+    animation: slide-in 1s ease-out;
+    font-family: var(--primary-font);
+}
+
+nav ul {
+    position: relative;
+    display: flex;
+    flex: 1 1 auto;
+    margin: 0;
+    padding: 0 30px;
+    list-style-type: none;
+}
+
+nav li:not(:last-child) {
+    margin-right: 40px;
+}
+
+nav li {
+    border: 2px solid transparent;
+    border-radius: 5px;
+    padding: 10px;
+    transition: background 0.2s;
+}
+
+nav a {
+    color: #004155;
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: color 0.2s;
+}
+
+nav a:hover {
+    background: #EDE937;
+    border: 2px solid #EDE937;
+    border-right: 2px solid #EDE937;
+    border-bottom: 2px solid #EDE937;
+}
+
+nav a {
+    color: #004155;
+}
+
+@keyframes slide-in {
+    0% {
+        top: -50px;
+    }
+
+    40% {
+        top: 20px;
+    }
+
+    70% {
+        top: 10px;
+    }
+
+    100% {
+        top: 15px;
+    }
+}
+
+#logo {
+    position: absolute;
+    width: 10%;
+    top: -15px;
+    left: 90px;
+}
 

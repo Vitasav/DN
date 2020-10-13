@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Istok+Web&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap');
 
 :root {
     --bg-color: #FFFFFF;
@@ -7,11 +7,16 @@
     --color-4: #5FA0D9;
     --color-5: #85A050;
 
-    --primary-font: 'Istok Web', sans-serif;
+    --primary-font: 'Lato', sans-serif;
+    ;
     --secondary-font: 'Assistant', sans-serif;
     --main-text-color: #000;
 
     --white-space: 1rem;
+}
+
+body {
+    overflow-x: hidden;
 }
 
 main {
@@ -20,30 +25,77 @@ main {
 
 img {
     width: 104%;
-    margin: -30px;
-    height: 60%;
+    margin: 20px -30px 0 -40px;
     z-index: 10;
 
 }
 
-body nav ul {
-    background-color: var(--color-2);
-    margin: -20px;
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-end;
-    padding: 50px;
-    align-items: stretch;
-    align-content: space-between;
-    color: var(--bg-color);
+nav {
+    position: relative;
+    top: 20px;
+    left: 60%;
+    transform: translateX(-50%);
+    display: inline-block;
+    border: 2px solid #EBECF1;
+    border-radius: 30px;
+    animation: slide-in 1s ease-out;
     font-family: var(--primary-font);
-    text-decoration-style:none;
+}
+
+ul {
+    position: relative;
+    display: flex;
+    flex: 1 1 auto;
+    margin: 0;
+    padding: 0 30px;
+    list-style-type: none;
+}
+
+li:not(:last-child) {
+    margin-right: 40px;
 }
 
 li {
+    border: 2px solid transparent;
+    border-radius: 5px;
+    padding: 10px;
+    transition: background 0.2s;
+}
 
-    margin: 5px 25px;
+a {
+    color: #004155;
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: color 0.2s;
+}
 
+a:hover {
+    background: #EDE937;
+    border: 2px solid #EDE937;
+    border-right: 2px solid #EDE937;
+    border-bottom: 2px solid #EDE937;
+}
+
+a {
+    color: #004155;
+}
+
+@keyframes slide-in {
+    0% {
+        top: -50px;
+    }
+
+    40% {
+        top: 20px;
+    }
+
+    70% {
+        top: 10px;
+    }
+
+    100% {
+        top: 15px;
+    }
 }
 
 p {
@@ -59,5 +111,40 @@ button {
     border: var(--color-2) solid 4px;
     font-family: var(--primary-font);
     z-index: 20;
-    cursor : pointer;
+    cursor: pointer;
 }
+
+#news {
+    margin: 0 -30px;
+    width: 1600px;
+    background-color: #C0D2CC;
+}
+
+#news img {
+    left: 200px;
+    margin: 20px 0px 10px 30px;
+    width: 400px;
+    height: 250px;
+}
+
+
+
+#join {
+    position: absolute;
+    left: 500px;
+    top: 500px;
+}
+
+#donate {
+    position: absolute;
+    left: 750px;
+    top: 500px;
+}
+
+#logo {
+    position: absolute;
+    width: 10%;
+    top: -15px;
+    left: 90px;
+}
+
