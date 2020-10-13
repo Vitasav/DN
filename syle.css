@@ -17,6 +17,7 @@
 
 body {
     overflow-x: hidden;
+    font-family: 'Lato', sans-serif;
 }
 
 main {
@@ -121,8 +122,8 @@ button {
 }
 
 #news img {
-    left: 200px;
-    margin: 20px 0px 10px 30px;
+
+    margin: 20px 50px 10px 55px;
     width: 400px;
     height: 250px;
 }
@@ -148,3 +149,45 @@ button {
     left: 90px;
 }
 
+h1 {
+    text-align: center;
+    margin: 40px;
+    font-size: 24px;
+    padding: 10px;
+}
+
+#news1 {
+    position: absolute;
+    left: 5%;
+    width: 700px;
+    text-align: center;
+}
+
+#news2 {
+    position: absolute;
+    left: 39%;
+    width: 700px;
+    text-align: center;
+
+}
+
+#news3 {
+    position: absolute;
+    left: 72%;
+    width: 700px;
+    text-align: center;
+
+}
+
+#seeall {
+    margin: 160px 700px 20px;
+    padding: 10px;
+}
+
+h2{
+    position: absolute;
+    top: 220px;
+    left: 400px;
+    color: white;
+    font-size: 50px;
+}
