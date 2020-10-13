@@ -19,17 +19,32 @@ input{
 	font-family: 'Lato', sans-serif;
 }
 
-h1, h2, h3, h4, h5, p{
+h1, , h3, h4, h5, {
 	margin-bottom: 10px;
 }
 
-p{
-	line-height: 20px;
+
+section p{
+	font-size: 15px;
+    margin: 20px 80px;
+    width: 500px;
+    text-align: left;
+    padding: 20px
+
+}
+section h2 {
+   font-size: 24px;
+    text-align: center;
+    margin: 50px
+}
+
+h3{
+    font-size: 24px;
+    text-align: center;
 }
 
 a{
 	text-decoration: none;
-	color: #FF462B;
 }
 
 .clearfix{
@@ -45,14 +60,12 @@ a{
 
 /* required */
 .calendar{
-	position: inherit;
+	position: relative;
 	border-radius: 20px;
 	overflow: hidden;
 	width: 1350px;
 	height: 560px;
-	left: 50%;
 	margin:50px;
-	top: 90%;
 	background-color:  #ffffff;
 	color: #333333;
     border: solid 3px #C0D2CC;
