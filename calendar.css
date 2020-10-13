@@ -8,10 +8,9 @@
 
 body{
 	margin: 20px;
-	background-color: #EEEDE9;
-	-webkit-font-smoothing: antialiased;
+	background-color: #ffffff;
 	text-rendering: optimizeLegibility;
-	font-size: 96.5%;
+	font-size: 100%;
 	font-family: Helvetica, Arial, sans-serif;
 }
 
@@ -46,16 +45,18 @@ a{
 /* required */
 .calendar{
 	position: absolute;
-	border-radius: 4px;
+	border-radius: 20px;
 	overflow: hidden;
-	width: 800px;
-	height: 450px;
+	width: 1250px;
+	height: 500px;
 	left: 50%;
-	margin-left: -400px;
+	margin-left: -600px;
 	margin-top: -225px;
-	top: 50%;
-	background-color: #ffffff;
+	top: 90%;
+	background-color:  #ffffff;
 	color: #333333;
+    border: solid 3px #C0D2CC;
+    box-shadow: 5px 5px 15px #A6A6A6;
 }
 
 .calendar h1, .calendar h2{
@@ -90,7 +91,7 @@ a{
 
 .calendar .leftCol{
 	width: 40%;
-	background-color: #F48989;
+	background-color: #C0D2CC
 }
 
 .calendar .noteList li{
@@ -102,7 +103,7 @@ a{
 .calendar .notes input,
 .calendar .noteList li{
 	font-weight: 300;
-	font-size: 14px;
+	font-size: 17px;
 }
 
 .calendar .notes p{
@@ -110,7 +111,7 @@ a{
 }
 
 .calendar .notes input{
-	background-color: #F48989;
+	background-color: #C0D2CC;
 	color: #ffffff;
 	border: none;
 	width: 200px;
@@ -129,8 +130,8 @@ a{
 	color: #ffffff;
 }
 
-.calendar .addNote{
-	font-size: 16px;
+.calendar .removeNote{
+	font-size: 20px;
 }
 
 .calendar .leftCol h1{
@@ -163,10 +164,10 @@ a{
 }
 
 .calendar .months li a{
-	font-size: 10px;
+	font-size: 13px;
 	color: #C7BEBE;
 	text-align: center;
-	width: 32px;
+	width: 55px;
 	margin-bottom: 20px;
 }
 
@@ -176,22 +177,22 @@ a{
 }
 
 .calendar .weekday li a{
-	width: 55px;
+	width: 95px;
 	text-align: center;
 	margin-bottom: 20px;
-	font-size: 12px;
+	font-size: 15px;
 }
 
 .calendar .days li{
-	width: 55px;
+	width: 95px;
 }
 
 .calendar .days li a{
 	width: 36px;
-	height: 24px;
+	height: 34px;
 	text-align: center;
 	margin: auto auto;
-	font-size: 12px;
+	font-size: 15px;
 	font-weight: bold;
 	border-radius: 12px;
 	margin-bottom: 10px;
@@ -201,13 +202,14 @@ a{
 
 .calendar .days li a:hover{
 	background-color: #EEEDE9;
+    width: 45px;
 }
 
 .calendar .days li .selected{
-	background-color: #F5A1A3!important;
+	background-color: #C0D2CC!important;
 	color: #ffffff;
+    width: 45px;
 }
 
-.calendar .days li .event{
-	color: #F5A1A3;
-}
+
+
