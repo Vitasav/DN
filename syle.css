@@ -2,8 +2,8 @@
 
 :root {
     --bg-color: #FFFFFF;
-    --color-2: #A2BF63;
-    --color-3: #E1F25C;
+    --color-2: #ffffff;
+    --color-3: #EDE937;
     --color-4: #5FA0D9;
     --color-5: #85A050;
 
@@ -105,7 +105,7 @@ p {
 }
 
 button {
-    border-radius: 20px;
+    border-radius: 30px;
     background-color: var(--color-3);
     padding: 15px;
     font-size: 20px;
@@ -202,10 +202,32 @@ button:hover {
 #garden button {
     position: absolute;
     top: 1080px;
+    left: 330px;
 
 }
 #garden p{
     width: 500px;
-    padding: 20px 10px 0 150px;
+    padding: 20px 10px 150px 150px;
     font-size: 20px;
+}
+
+video{
+    position: absolute;
+    left: 850px;
+    top:860px;
+
+}
+
+footer {
+    background-color: #3C6359;
+    padding: 50px;
+    margin: -10px -50px -50px -10px;
+    border-top: solid 10px #ffffff;
+
+}
+
+footer a{
+    color: white;
+    padding: 50px;
+
 }
