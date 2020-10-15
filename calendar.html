@@ -28,24 +28,29 @@
     <main>
         <img src="luca-bravo-A-fubu9QJxE-unsplash.jpg" alt="Sprouts of plants" />
         <h5>#DNGarden</h5>
+        <video id="video" src="video1.mp4" width="550" height="" controls="" autoplay="play">
+
+        </video>
         <section id="text">
-        <h2>Benefits of growing your own fruit, vegetables and herbs</h2>
+            <h2>Benefits of growing your own fruit, vegetables and herbs</h2>
             <p>
-            Although a recent change in European law means that a range of chemicals harmful to pollinators are no longer used on crops grown in these countries, scientists are worried that replacement pesticides are no safer for bee populations. </p>
+                Although a recent change in European law means that a range of chemicals harmful to pollinators are no longer used on crops grown in these countries, scientists are worried that replacement pesticides are no safer for bee populations. </p>
             <p>
                 Creating your own vegetable patch puts you in control of the practices used to grow the food you eat, providing a great opportunity to effect positive environmental change. To help bee populations further, you might decide to plant bee-friendly flowers in another part of your garden. </p>
             <p>
                 An additional environmental benefit of starting a vegetable garden is that it allows you to cook with vegetables that are grown as close to home as possible, whether that be in your back garden or at a community allotment. By reducing your consumption of food grown hundreds, if not thousands, or miles away, your carbon footprint will decrease. </p>
+
             <p>
                 Produce grown in your back garden or local allotment is the definition of fresh. With no need for it to be tightly packaged for transit, home grown produce causes no increase in plastic waste. </p>
             <p>
                 Growing your own fruit and vegetables might take some time out of your day, but it is certainly time well spent. Gardening is a great way to combat stress and anxiety, with fresh air and exercise being widely recommended to people suffering with mental health. The various tasks involved in producing greens for your kitchen table, from planting seeds to harvesting vegetables, are sure to increase your daily activity. </p>
-<p>
-A great sense of accomplishment can also be found in successfully nurturing a plant from its beginnings as a seedling up to its growth of vegetables ripe for picking. If you’re lucky, you might end up with enough food to share with your friends, family and local community, helping to spread a love of home grown produce.
+            <p>
+                A great sense of accomplishment can also be found in successfully nurturing a plant from its beginnings as a seedling up to its growth of vegetables ripe for picking. If you’re lucky, you might end up with enough food to share with your friends, family and local community, helping to spread a love of home grown produce.
             </p>
 
         </section>
-        <video></video>
+        <div id="benefits">
+            <img  src="benefits.png" alt="benefits"/></div>
         <h3>Gardening Calendar</h3>
         <div class="calendar">
 
@@ -95,6 +100,7 @@ A great sense of accomplishment can also be found in successfully nurturing a pl
                     </ul>
                     <div class="clearfix"></div>
                     <ul class="days">
+
                         <script>
                             for (var _i = 1; _i <= 31; _i += 1) {
                                 var _addClass = '';
@@ -113,6 +119,9 @@ A great sense of accomplishment can also be found in successfully nurturing a pl
                                 document.write('<li><a href="#" title="' + _i + '" data-value="' + _i + '"' + _addClass + '>' + _i + '</a></li>');
                             }
 
+                            var vid = document.getElementById("video");
+                            vid.volume = 0.05;
+
                         </script>
                     </ul>
                     <div class="clearfix"></div>
@@ -123,6 +132,15 @@ A great sense of accomplishment can also be found in successfully nurturing a pl
 
         </div>
     </main>
+    <footer>
+    <a href="https://www.instagram.com/danmarksnatur/" >Instagram</a>
+        <a href="https://www.facebook.com/DanmarksNaturfredningsforening/">facebook</a>
+        <a href="https://twitter.com/danmarksnatur">Twitter</a>
+        <a href="https://www.linkedin.com/company/danmarks-naturfredningsforening/?trk=nav_account_sub_nav_company_admin">Linkedin</a>
+        <a href="https://www.youtube.com/channel/UCslP2m20iDqfyYDjEW4s7Wg">Youtube</a>
+
+
+    </footer>
 </body>
 
 </html>

@@ -205,16 +205,17 @@ button:hover {
     left: 330px;
 
 }
-#garden p{
+
+#garden p {
     width: 500px;
     padding: 20px 10px 150px 150px;
     font-size: 20px;
 }
 
-video{
+video {
     position: absolute;
     left: 850px;
-    top:860px;
+    top: 860px;
 
 }
 
@@ -226,7 +227,7 @@ footer {
 
 }
 
-footer a{
+footer a {
     color: white;
     padding: 50px;
 
